@@ -14,14 +14,42 @@
 }
 
 .App-header {
+  display: flex;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  gap: 1em;
+  padding: 1em;
+
+  #box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1em;
+
+    overflow: hidden;
+	  overflow-wrap: break-word;
+
+    padding: 2em;
+
+    max-width: 320px;
+    height: 720px;
+    background-color: white;
+    border-radius: 0.35rem;
+    color: black;
+    font-size: 14px;
+
+    span {
+      display: flex;
+      max-width: 300px !important;
+      word-break: break-all;
+    }
+  }
+}
+
+#hash {
+  word-break: break-all;
 }
 
 .App-link {
